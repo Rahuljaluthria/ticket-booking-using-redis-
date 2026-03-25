@@ -4,6 +4,10 @@ import { createClient } from 'redis';
 const app = express();
 app.use(express.json());
 
+app.get('/', (req, res) => {
+    res.send("🎉 Ticket Booking API is LIVE!");
+});
+
 const redis = createClient({
   url: 'redis://default:HN79A5HBuxyoTSC7gczxEEJ77beMDnUP@redis-13372.c91.us-east-1-3.ec2.cloud.redislabs.com:13372'
 });
