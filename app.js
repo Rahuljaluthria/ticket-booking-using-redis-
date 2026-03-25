@@ -5,7 +5,7 @@ const app = express();
 app.use(express.json());
 
 const redis = createClient({
-  url: "redis://default:YOUR_PASSWORD@YOUR_HOST:YOUR_PORT"
+  url: 'redis://default:HN79A5HBuxyoTSC7gczxEEJ77beMDnUP@redis-13372.c91.us-east-1-3.ec2.cloud.redislabs.com:13372'
 });
 
 redis.on('error', (err) => console.log('Redis Error:', err));
