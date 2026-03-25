@@ -3,23 +3,23 @@
 RAHUL JALUTHRIA 
 24BCY70054
 
-# 🎟️ Ticket Booking System with Redis
+#  Ticket Booking System with Redis
 
 A simple backend application that simulates a ticket booking system with concurrency control using Redis.
 
 ---
 
-## 📌 Aim
+##  Aim
 To create a concurrent ticket booking system with seat locking using Redis.
 
 ---
 
-## 🧠 Overview
+##  Overview
 This project is built using Node.js and Express.js. It allows users to view available seats and book them. Redis is used to handle concurrency by implementing a locking mechanism to prevent multiple users from booking the same seat at the same time.
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - Node.js  
 - Express.js  
 - Redis  
@@ -28,7 +28,7 @@ This project is built using Node.js and Express.js. It allows users to view avai
 
 ---
 
-## 🚀 Features
+##  Features
 - View all seats and their status  
 - Book a seat  
 - Prevent double booking using Redis locks  
@@ -36,7 +36,7 @@ This project is built using Node.js and Express.js. It allows users to view avai
 
 ---
 
-## 🔐 Concurrency Handling
+##  Concurrency Handling
 Redis is used to implement seat locking:
 - A lock is created when a booking request is made  
 - Only one user can acquire the lock  
@@ -45,7 +45,7 @@ Redis is used to implement seat locking:
 
 ---
 
-## 📡 API Endpoints
+##  API Endpoints
 
 ### Get All Seats
 GET /seats
@@ -61,15 +61,15 @@ POST /reset
 
 ---
 
-## 🧪 Testing
+##  Testing
 All endpoints are tested using Postman by sending HTTP requests to the server.
 
 ---
 
-## 🌐 Deployment
+##  Deployment
 The backend is deployed on Render and connected to Redis Cloud for data storage and locking.
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 This project demonstrates how Redis can be used to handle concurrency in real-time systems by implementing a seat locking mechanism, ensuring reliable and consistent booking operations.
